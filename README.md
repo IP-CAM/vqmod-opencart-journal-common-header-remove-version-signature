@@ -1,2 +1,7 @@
-# vqmod-opencart-journal-common-header-remove-version-signature
-[VQMOD] Journal - Advanced Opencart Theme: Remove version signature from &lt;html> tag
+# [VQMOD] Journal - Advanced Opencart Theme: Remove version signature from &lt;html> tag
+
+**Opencart**: v.2.x  
+**Opencart Theme**: Journal - Advanced Opencart Theme (https://themeforest.net/item/journal-advanced-opencart-theme/4260361)  
+**Attention**: You have to install `[VQMOD]` for **Opencart** ( https://github.com/vqmod/vqmod/releases ) for this to work!
+
+Upload the contents of the `upload` folder.
