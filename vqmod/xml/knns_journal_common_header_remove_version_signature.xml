@@ -5,12 +5,12 @@
 	xsi:schemaLocation="https://github.com/vqmod/vqmod https://raw.githubusercontent.com/vqmod/vqmod/master/vqmod.xsd"
 	>
 	<id><![CDATA[[VQMOD] Journal - Advanced Opencart Theme: Remove version signature from <html> tag]]></id>
-	<version>0.1.0</version>
+	<version>0.2.0</version>
 	<vqmver>2.6.3</vqmver>
 	<author>kanenas.net (aka Nikolas Branis) - nbran@kanenas.net</author>
 	<file path="catalog/view/theme/journal3/template/common/" name="header.tpl" error="log">
 		<operation error="skip">
-			<search position="replace"><![CDATA[<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="<?php echo implode(' ', $j3->document->getClasses()); ?>" data-jv="<?php echo JOURNAL3_VERSION; ?>" data-ov="<?php echo VERSION; ?>">">]]></search>
+			<search position="replace"><![CDATA[<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="<?php echo implode(' ', $j3->document->getClasses()); ?>" data-jb="<?php echo $j3->constant('JOURNAL3_BUILD'); ?>" data-jv="<?php echo $j3->constant('JOURNAL3_VERSION'); ?>" data-ov="<?php echo VERSION; ?>">]]></search>
 			<add><![CDATA[
 <?php // kanenas: knns_journal_common_header_remove_version_signature_v23x.xml (start) << ?>
 <html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="<?php echo implode(' ', $j3->document->getClasses()); ?>">
